@@ -23,7 +23,11 @@ def get_result(user_answers):
         for i in range(len(identifiers) - len(user_answers)):
             user_answers.append(0)
 
-    classifier = pickle.load(open("final_model.sav", 'rb'))
+    try:
+        classifier = pickle.load(open("final_model.sav", 'rb'))
+
+    except(FileNotFoundError):
+        Train()
 
     return str(classifier.predict([user_answers])[0])
 
