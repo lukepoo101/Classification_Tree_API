@@ -3,7 +3,7 @@ import json
 import requests
 
 ##Server IP
-server_ip = "nameless-harbor-82110.herokuapp.com"
+server_ip = "classification-tree-api.herokuapp.com"
 
 ##Client info inlucing version and build date
 client_info = {
