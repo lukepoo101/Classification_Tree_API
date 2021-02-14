@@ -28,6 +28,7 @@ def get_result(user_answers):
 
     except(FileNotFoundError):
         Train()
+        classifier = pickle.load(open("final_model.sav", 'rb'))
 
     return str(classifier.predict([user_answers])[0])
 
