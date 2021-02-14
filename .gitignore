@@ -1,0 +1,6 @@
+venv/
+Database-Creation.py
+final_model.sav
+.idea/
+*.pyc
+__pycache__/
